@@ -4,6 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
+import 'core /ui/common_widgets/back_gorund_widget.dart';
+import 'core /ui/common_widgets/custom_sliding_toggle.dart';
+
 void main(List<String> args) {
   runApp(const MyApp());
 }
@@ -26,9 +29,23 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.amber,
-        body: Center(
-          child: TextField(),
-        ));
+      body: BackGroundWidget(
+        child: Center(
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                CustomSlidingToggle(
+                  leftLabel: 'leftLabel',
+                  rightLabel: 'rightLabel',
+                  onChange: (value) {},
+                )
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
