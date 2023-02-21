@@ -38,6 +38,7 @@ dependencies:
   flutter_bloc: ^8.1.2
   dio: ^5.0.0
   flutter_native_splash: ^2.2.18
+  pin_code_fields: ^7.4.0
 
 dev_dependencies:
   flutter_test:

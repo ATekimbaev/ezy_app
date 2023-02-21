@@ -1,5 +1,5 @@
-import 'package:ezy_app/core%20/ui/theme/app_colors.dart';
-import 'package:ezy_app/core%20/ui/theme/app_fonts.dart';
+import 'package:ezy_app/core_data/ui/theme/app_colors.dart';
+import 'package:ezy_app/core_data/ui/theme/app_fonts.dart';
 import 'package:flutter/material.dart';
 
 class CustomSlidingToggle extends StatefulWidget {
