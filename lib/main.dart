@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('KindaCode.com'),
+        title: const Text('KindaCode'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(30),
