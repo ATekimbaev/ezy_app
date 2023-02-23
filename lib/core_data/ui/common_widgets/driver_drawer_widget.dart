@@ -50,7 +50,7 @@ class _DriverDrawerWidgetState extends State<DriverDrawerWidget> {
                     Text(
                       'Иван Иванов',
                       style:
-                          AppFonts.w600s20.copyWith(color: AppColors.blackGrey),
+                          AppFonts.w600s20.copyWith(color: AppColors.grey),
                     ),
                     SizedBox(
                       height: 2,
@@ -58,7 +58,7 @@ class _DriverDrawerWidgetState extends State<DriverDrawerWidget> {
                     Text(
                       '(+996) 500 000 000',
                       style: AppFonts.w400s16
-                          .copyWith(color: AppColors.greynumber),
+                          .copyWith(color: AppColors.lightgrey),
                     ),
                   ],
                 ),
@@ -70,7 +70,7 @@ class _DriverDrawerWidgetState extends State<DriverDrawerWidget> {
             Container(
               width: 260,
               height: 1,
-              color: AppColors.container1px,
+              color: AppColors.icons,
             ),
             const SizedBox(
               height: 22,
@@ -87,7 +87,7 @@ class _DriverDrawerWidgetState extends State<DriverDrawerWidget> {
                 ),
                 Text(
                   '12 заказов',
-                  style: AppFonts.w400s16.copyWith(color: AppColors.greynumber),
+                  style: AppFonts.w400s16.copyWith(color: AppColors.lightgrey),
                 )
               ],
             ),
@@ -112,52 +112,53 @@ class _DriverDrawerWidgetState extends State<DriverDrawerWidget> {
                 ),
                 Text(
                   'Онлайн',
-                  style: AppFonts.w400s16.copyWith(color: AppColors.blackGrey),
+                  style: AppFonts.w400s16.copyWith(color: AppColors.grey),
                 )
               ],
             ),
             const SizedBox(
               height: 28,
             ),
+            
             Container(
               width: 260,
               height: 1,
-              color: AppColors.container1px,
+              color: AppColors.icons,
             ),
             const SizedBox(
               height: 21,
             ),
             Text(
               'Заявки',
-              style: AppFonts.w400s16.copyWith(color: AppColors.blackGrey),
+              style: AppFonts.w400s16.copyWith(color: AppColors.grey),
             ),
             const SizedBox(
               height: 36,
             ),
             Text(
               'Моя техника',
-              style: AppFonts.w400s16.copyWith(color: AppColors.blackGrey),
+              style: AppFonts.w400s16.copyWith(color: AppColors.grey),
             ),
             const SizedBox(
               height: 36,
             ),
             Text(
               'История заказов',
-              style: AppFonts.w400s16.copyWith(color: AppColors.blackGrey),
+              style: AppFonts.w400s16.copyWith(color: AppColors.grey),
             ),
             const SizedBox(
               height: 36,
             ),
             Text(
               'Настройки',
-              style: AppFonts.w400s16.copyWith(color: AppColors.blackGrey),
+              style: AppFonts.w400s16.copyWith(color: AppColors.grey),
             ),
             const SizedBox(
               height: 36,
             ),
             Text(
               'Поддержка',
-              style: AppFonts.w400s16.copyWith(color: AppColors.blackGrey),
+              style: AppFonts.w400s16.copyWith(color: AppColors.grey),
             ),
           ],
         ),

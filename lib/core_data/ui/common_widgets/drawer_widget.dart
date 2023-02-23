@@ -42,7 +42,7 @@ class DrawerWidget extends StatelessWidget {
                     Text(
                       'Иван Иванов',
                       style:
-                          AppFonts.w600s20.copyWith(color: AppColors.blackGrey),
+                          AppFonts.w600s20.copyWith(color: AppColors.grey),
                     ),
                     SizedBox(
                       height: 2,
@@ -50,7 +50,7 @@ class DrawerWidget extends StatelessWidget {
                     Text(
                       '(+996) 500 000 000',
                       style: AppFonts.w400s16
-                          .copyWith(color: AppColors.greynumber),
+                          .copyWith(color: AppColors.lightgrey),
                     ),
                   ],
                 )
@@ -61,35 +61,35 @@ class DrawerWidget extends StatelessWidget {
             ),
             Text(
               'Каталог',
-              style: AppFonts.w400s16.copyWith(color: AppColors.blackGrey),
+              style: AppFonts.w400s16.copyWith(color: AppColors.grey),
             ),
             const SizedBox(
               height: 36,
             ),
             Text(
               'История',
-              style: AppFonts.w400s16.copyWith(color: AppColors.blackGrey),
+              style: AppFonts.w400s16.copyWith(color: AppColors.grey),
             ),
             const SizedBox(
               height: 36,
             ),
             Text(
               'Настройки',
-              style: AppFonts.w400s16.copyWith(color: AppColors.blackGrey),
+              style: AppFonts.w400s16.copyWith(color: AppColors.grey),
             ),
             const SizedBox(
               height: 36,
             ),
             Text(
               'Информация',
-              style: AppFonts.w400s16.copyWith(color: AppColors.blackGrey),
+              style: AppFonts.w400s16.copyWith(color: AppColors.grey),
             ),
             const SizedBox(
               height: 36,
             ),
             Text(
               'Поддержка',
-              style: AppFonts.w400s16.copyWith(color: AppColors.blackGrey),
+              style: AppFonts.w400s16.copyWith(color: AppColors.grey),
             ),
             const SizedBox(
               height: 300,
