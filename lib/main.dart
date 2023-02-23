@@ -1,4 +1,5 @@
 import 'package:ezy_app/core_data/ui/common_widgets/drawer_widget.dart';
+import 'package:ezy_app/core_data/ui/common_widgets/loading_widget.dart';
 import 'package:ezy_app/core_data/ui/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -52,11 +53,11 @@ class _HomePageState extends State<HomePage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children:  [
-                TextFieldWidget(
-                  label: 'Имя',
-                ),
+                // TextFieldWidget(
+                //   label: 'Имя',
+                // ),
                 // CircleAvatarWidget(),
-               
+               LoadingWidget()
               ],
             ),
           ),

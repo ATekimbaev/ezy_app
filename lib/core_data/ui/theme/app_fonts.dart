@@ -8,6 +8,8 @@ abstract class AppFonts {
   static const TextStyle w400s16 = TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w400,
+    height: 22,
+    
   );
   static const TextStyle w400s18 = TextStyle(
     fontSize: 18,
