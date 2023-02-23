@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 
 import '../theme/app_colors.dart';
 
-class CircleAvatarWidget extends StatelessWidget {
-  const CircleAvatarWidget({super.key, this.onTap});
+class CircleButtonWidget extends StatelessWidget {
+  const CircleButtonWidget({super.key, this.onTap});
   final Function()? onTap;
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap:onTap,
+      onTap: onTap,
       child: CircleAvatar(
         backgroundColor: AppColors.white,
         maxRadius: 25,
