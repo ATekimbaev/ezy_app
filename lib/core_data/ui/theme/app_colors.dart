@@ -8,4 +8,14 @@ abstract class AppColors {
   static Color pinTextFieldBorderColor =
       const Color(0xff8A959E).withOpacity(0.5);
   static const Color lightGrey = Color(0xffF8F8F8);
+  static const Color drawerCl = Color(0xff525252);
+  static const Color drawerblackgrey = Color(0xff262626);
+  static const Color whiteavatar = Color(0xffC3C3C3);
+  static const Color whitegrey = Color(0xffA8A8A8);
+  static const Color driverCl = Color(0xffD9D9D9);
+  static const Color blackGrey = Color(0xff5B5B5B);
+  static const Color greynumber = Color(0xff808080);
+  // static const Color greytext = Color(0xff5B5B5B);
+  static const Color container1px = Color(0xffD2D3D6);
+  static const Color green = Color(0xff21D147);
 }
