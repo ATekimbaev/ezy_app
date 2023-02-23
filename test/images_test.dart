@@ -9,5 +9,6 @@ void main() {
     expect(File(Images.bg).existsSync(), true);
     expect(File(Images.icons).existsSync(), true);
     expect(File(Images.list).existsSync(), true);
+    expect(File(Images.logo).existsSync(), true);
   });
 }

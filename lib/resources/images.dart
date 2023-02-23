@@ -7,4 +7,5 @@ class Images {
   static const String bg = 'assets/images/bg.png';
   static const String icons = 'assets/images/icons.png';
   static const String list = 'assets/images/list.png';
+  static const String logo = 'assets/images/logo.png';
 }
