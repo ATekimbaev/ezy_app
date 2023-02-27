@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
+import '../../../resources/resources.dart';
 import '../theme/app_colors.dart';
 
-bool isPasswors = true;
-bool obscureText = false;
+// bool isPasswors = true;
+// bool obscureText = false;
 
-class TextFieldWidget extends StatelessWidget {
+class TextFieldWidget extends StatefulWidget {
   const TextFieldWidget(
       {super.key,
       required this.label,
@@ -15,7 +16,8 @@ class TextFieldWidget extends StatelessWidget {
       this.obscureText,
       this.keyboardType,
       this.hintText,
-      this.df});
+      this.df,
+      this.isPasswors});
   final String label;
   final Function(String)? onChanged;
   final TextEditingController? controller;
@@ -24,20 +26,25 @@ class TextFieldWidget extends StatelessWidget {
   final TextInputType? keyboardType;
   final String? hintText;
   final Function()? df;
+  final bool? isPasswors;
+  @override
+  State<TextFieldWidget> createState() => _TextFieldWidgetState();
+}
 
+class _TextFieldWidgetState extends State<TextFieldWidget> {
   @override
   Widget build(BuildContext context) {
     return TextField(
-        keyboardType: keyboardType, // TextInputType.phone,
-        controller: controller,
-        onChanged: onChanged,
+        keyboardType: widget.keyboardType, // TextInputType.phone,
+        controller: widget.controller,
+        onChanged: widget.onChanged,
         style: const TextStyle(color: AppColors.white),
         decoration: InputDecoration(
-          hintText: hintText,
-          suffixIcon: suffixIcon, //IconButton()
+          hintText: widget.hintText,
+          suffixIcon: widget.suffixIcon, //IconButton()
           prefixIconColor: AppColors.white,
           label: Text(
-            label,
+            widget.label,
             style: const TextStyle(color: AppColors.white),
           ),
           enabledBorder: OutlineInputBorder(
@@ -48,14 +55,5 @@ class TextFieldWidget extends StatelessWidget {
               borderRadius: BorderRadius.circular(25)),
         ));
   }
-  
 }
 
-//IconButton(
-//onPressed: () {
-//isPasswors = !isPasswors;
-//setState(() {});
-//},
-//icon: Icon(isPasswors
-// ? Icons.remove_red_eye
-// : Icons.energy_savings_leaf)),

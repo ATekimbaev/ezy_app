@@ -5,7 +5,12 @@ import 'package:ezy_app/resources/resources.dart';
 
 void main() {
   test('images assets test', () {
+    expect(File(Images.ezyLogo).existsSync(), true);
+    expect(File(Images.frame).existsSync(), true);
+    expect(File(Images.iconex).existsSync(), true);
+    expect(File(Images.iconexRemove).existsSync(), true);
     expect(File(Images.avatar).existsSync(), true);
+    expect(File(Images.avatarProfil).existsSync(), true);
     expect(File(Images.bg).existsSync(), true);
     expect(File(Images.icons).existsSync(), true);
     expect(File(Images.list).existsSync(), true);

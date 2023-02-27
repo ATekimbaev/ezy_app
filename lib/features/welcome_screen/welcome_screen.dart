@@ -9,6 +9,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
+import '../auto_parts_store/auto_parts_store.dart';
+
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
 
@@ -43,6 +45,8 @@ class WelcomeScreen extends StatelessWidget {
               ),
               const SizedBox(height: 75),
               AppButton(
+                isTransparent: false,
+                backGroundColor: AppColors.lightViolet,
                 title: 'Регистрация',
                 onPressed: () {
                   Navigator.push(
@@ -63,7 +67,33 @@ class WelcomeScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height: 100)
+              // const SizedBox(height: 100)
+              SizedBox(
+                  height: 34,
+                  width: 168,
+                  child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        elevation: 0,
+                        backgroundColor: AppColors.lightViolet,
+                        shape: RoundedRectangleBorder(
+                          side: BorderSide(
+                            width: 2,
+                            color: AppColors.white,
+                          ),
+                          borderRadius: BorderRadius.circular(39),
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>const AutoPartsStore()));
+                      },
+                      child: Text(
+                        'Магазин автозапчастей',
+                        style:
+                            AppFonts.w700s12.copyWith(color: AppColors.white),
+                      ))),
             ],
           ),
         ),
