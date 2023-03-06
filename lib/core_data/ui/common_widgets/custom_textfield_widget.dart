@@ -53,7 +53,8 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
           border: OutlineInputBorder(
               borderSide: const BorderSide(width: 1, color: AppColors.white),
               borderRadius: BorderRadius.circular(25)),
-        ));
+        )
+        );
   }
 }
 

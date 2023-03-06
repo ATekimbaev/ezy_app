@@ -13,7 +13,7 @@ import 'drawer_tab_settings.dart';
 
 class DrawerWidget extends StatelessWidget {
   const DrawerWidget({super.key});
-//*GG
+
   @override
   Widget build(BuildContext context) {
     return Drawer(

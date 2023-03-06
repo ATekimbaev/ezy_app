@@ -41,6 +41,7 @@ dependencies:
   pin_code_fields: ^7.4.0
   spider: ^4.2.0
   flutter_switch: ^0.3.2
+  file_picker: ^5.2.5
 
 dev_dependencies:
   flutter_test:
