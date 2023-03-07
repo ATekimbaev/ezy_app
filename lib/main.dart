@@ -1,5 +1,9 @@
+import 'package:ezy_app/features/catalog_screen/catalog_screen.dart';
 import 'package:flutter/material.dart';
 
+import 'features/auto_parts_store/auto_parts_store.dart';
+import 'features/customers_screen/registration_screen/registration_screen.dart';
+import 'features/entrance_screen/entrance_screen.dart';
 import 'features/welcome_screen/welcome_screen.dart';
 
 void main(List<String> args) {
@@ -14,9 +18,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(fontFamily: 'SFProDisplay'),
       // home: const EntranceScreen(),
-      // home: CustomersRegistrationScreen(),
+      // home: DriverRegistrationScreen(),
       // home: AutoPartsStore(),
-      home: const WelcomeScreen(),
+      home: WelcomeScreen(),
     );
   }
 }

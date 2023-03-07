@@ -7,7 +7,7 @@ import 'custom_sliding_toggle.dart';
 
 class DrawerWidget extends StatelessWidget {
   const DrawerWidget({super.key});
-//*GG
+
   @override
   Widget build(BuildContext context) {
     return Drawer(
