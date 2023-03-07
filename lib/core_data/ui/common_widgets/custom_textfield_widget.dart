@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../resources/resources.dart';
 import '../theme/app_colors.dart';
 
 // bool isPasswors = true;

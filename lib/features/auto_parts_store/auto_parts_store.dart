@@ -2,10 +2,7 @@ import 'package:ezy_app/core_data/ui/theme/app_colors.dart';
 import 'package:ezy_app/core_data/ui/theme/app_fonts.dart';
 import 'package:ezy_app/resources/resources.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
-import '../../core_data/ui/common_widgets/app_button.dart';
 
 class AutoPartsStore extends StatelessWidget {
   const AutoPartsStore({super.key});
@@ -44,7 +41,7 @@ class AutoPartsStore extends StatelessWidget {
                     elevation: 0,
                     backgroundColor: AppColors.white,
                     shape: RoundedRectangleBorder(
-                      side: BorderSide(
+                      side: const BorderSide(
                         width: 2,
                         color: AppColors.violet,
                       ),

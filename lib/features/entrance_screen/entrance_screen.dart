@@ -1,16 +1,12 @@
 import 'package:ezy_app/core_data/ui/common_widgets/circle_button.dart';
 import 'package:ezy_app/core_data/ui/theme/app_colors.dart';
 import 'package:ezy_app/core_data/ui/theme/app_fonts.dart';
-import 'package:ezy_app/resources/resources.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 import '../../core_data/ui/common_widgets/app_button.dart';
 import '../../core_data/ui/common_widgets/back_gorund_widget.dart';
 import '../../core_data/ui/common_widgets/custom_textfield_passwors_widget.dart';
 import '../../core_data/ui/common_widgets/custom_textfield_widget.dart';
-import '../../core_data/ui/common_widgets/loading_widget.dart';
 import '../loading_screen/loading_screen.dart';
 
 bool isPasswors = true;
@@ -37,7 +33,7 @@ class _EntranceScreenState extends State<EntranceScreen> {
               padding: const EdgeInsets.only(left: 16),
               child: Row(
                 children: [
-                const CircleButtonWidget(),
+                  const CircleButtonWidget(),
                   const SizedBox(
                     width: 103,
                   ),
@@ -63,7 +59,9 @@ class _EntranceScreenState extends State<EntranceScreen> {
             ),
             const Padding(
               padding: EdgeInsets.only(left: 12, right: 13),
-              child: CustomTextFieldPassworsWidget(lable: 'Пароль',),
+              child: CustomTextFieldPassworsWidget(
+                lable: 'Пароль',
+              ),
             ),
             const SizedBox(
               height: 30,
@@ -77,7 +75,7 @@ class _EntranceScreenState extends State<EntranceScreen> {
               title: 'Войти',
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => LoadingScreen()));
+                    MaterialPageRoute(builder: (context) => const LoadingScreen()));
               },
             ),
             const SizedBox(

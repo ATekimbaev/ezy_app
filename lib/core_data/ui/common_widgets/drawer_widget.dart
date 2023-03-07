@@ -1,15 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 import '../../../resources/resources.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_fonts.dart';
 import 'custom_sliding_toggle.dart';
-import 'drawer_tab_settings.dart';
 
 class DrawerWidget extends StatelessWidget {
   const DrawerWidget({super.key});
@@ -23,7 +17,7 @@ class DrawerWidget extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(
+            const SizedBox(
               height: 60,
             ),
             Row(
@@ -33,7 +27,7 @@ class DrawerWidget extends StatelessWidget {
                   width: 19,
                   height: 24,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 20,
                 ),
                 Column(
@@ -44,7 +38,7 @@ class DrawerWidget extends StatelessWidget {
                       style:
                           AppFonts.w600s20.copyWith(color: AppColors.grey),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 2,
                     ),
                     Text(
@@ -56,7 +50,7 @@ class DrawerWidget extends StatelessWidget {
                 )
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 45,
             ),
             Text(

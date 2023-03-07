@@ -1,15 +1,10 @@
 import 'package:ezy_app/resources/resources.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+
 import 'package:flutter_switch/flutter_switch.dart';
 
 import '../theme/app_colors.dart';
 import '../theme/app_fonts.dart';
-import 'drawer_tab_settings.dart';
 
 class DriverDrawerWidget extends StatefulWidget {
   const DriverDrawerWidget({super.key});
@@ -31,7 +26,7 @@ class _DriverDrawerWidgetState extends State<DriverDrawerWidget> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(
+            const SizedBox(
               height: 60,
             ),
             Row(
@@ -41,7 +36,7 @@ class _DriverDrawerWidgetState extends State<DriverDrawerWidget> {
                   width: 41,
                   height: 41,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 20,
                 ),
                 Column(
@@ -52,7 +47,7 @@ class _DriverDrawerWidgetState extends State<DriverDrawerWidget> {
                       style:
                           AppFonts.w600s20.copyWith(color: AppColors.grey),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 2,
                     ),
                     Text(

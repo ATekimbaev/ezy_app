@@ -1,7 +1,6 @@
 import 'package:ezy_app/core_data/ui/theme/app_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+
 
 class LoadingWidget extends StatelessWidget {
   const LoadingWidget({super.key});

@@ -6,8 +6,6 @@ import 'package:ezy_app/core_data/ui/theme/app_fonts.dart';
 import 'package:ezy_app/features/customers_screen/registration_screen/registration_screen.dart';
 import 'package:ezy_app/resources/resources.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 import '../auto_parts_store/auto_parts_store.dart';
 
@@ -76,7 +74,7 @@ class WelcomeScreen extends StatelessWidget {
                         elevation: 0,
                         backgroundColor: AppColors.lightViolet,
                         shape: RoundedRectangleBorder(
-                          side: BorderSide(
+                          side: const BorderSide(
                             width: 2,
                             color: AppColors.white,
                           ),
@@ -87,7 +85,7 @@ class WelcomeScreen extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) =>const AutoPartsStore()));
+                                builder: (context) => const AutoPartsStore()));
                       },
                       child: Text(
                         'Магазин автозапчастей',
