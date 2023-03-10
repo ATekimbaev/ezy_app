@@ -18,6 +18,5 @@ abstract class AppColors {
   static const Color icons = Color(0xffD2D3D6);
   static const Color green = Color(0xff21D147);
   static const Color red = Color(0xffF02727);
+  static const Color blackText = Color(0xff262628);
 }
-
-

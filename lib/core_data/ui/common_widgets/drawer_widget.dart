@@ -17,17 +17,17 @@ class DrawerWidget extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SizedBox(
+            SizedBox(
               height: 60,
             ),
             Row(
               children: [
                 Image.asset(
                   Images.avatar,
-                  width: 19,
-                  height: 24,
+                  width: 41,
+                  height: 41,
                 ),
-                const SizedBox(
+                SizedBox(
                   width: 20,
                 ),
                 Column(
@@ -35,22 +35,21 @@ class DrawerWidget extends StatelessWidget {
                   children: [
                     Text(
                       'Иван Иванов',
-                      style:
-                          AppFonts.w600s20.copyWith(color: AppColors.grey),
+                      style: AppFonts.w600s20.copyWith(color: AppColors.grey),
                     ),
-                    const SizedBox(
+                    SizedBox(
                       height: 2,
                     ),
                     Text(
                       '(+996) 500 000 000',
-                      style: AppFonts.w400s16
-                          .copyWith(color: AppColors.lightgrey),
+                      style:
+                          AppFonts.w400s16.copyWith(color: AppColors.lightgrey),
                     ),
                   ],
                 )
               ],
             ),
-            const SizedBox(
+            SizedBox(
               height: 45,
             ),
             Text(

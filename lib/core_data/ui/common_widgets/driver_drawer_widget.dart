@@ -36,7 +36,7 @@ class _DriverDrawerWidgetState extends State<DriverDrawerWidget> {
                   width: 41,
                   height: 41,
                 ),
-                const SizedBox(
+                SizedBox(
                   width: 20,
                 ),
                 Column(
@@ -44,16 +44,15 @@ class _DriverDrawerWidgetState extends State<DriverDrawerWidget> {
                   children: [
                     Text(
                       'Иван Иванов',
-                      style:
-                          AppFonts.w600s20.copyWith(color: AppColors.grey),
+                      style: AppFonts.w600s20.copyWith(color: AppColors.grey),
                     ),
-                    const SizedBox(
+                    SizedBox(
                       height: 2,
                     ),
                     Text(
                       '(+996) 500 000 000',
-                      style: AppFonts.w400s16
-                          .copyWith(color: AppColors.lightgrey),
+                      style:
+                          AppFonts.w400s16.copyWith(color: AppColors.lightgrey),
                     ),
                   ],
                 ),
@@ -114,7 +113,6 @@ class _DriverDrawerWidgetState extends State<DriverDrawerWidget> {
             const SizedBox(
               height: 28,
             ),
-            
             Container(
               width: 260,
               height: 1,
