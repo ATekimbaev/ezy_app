@@ -7,6 +7,8 @@ class Images {
   static const String frame = 'assets/images/Frame.png';
   static const String iconex = 'assets/images/Iconex.png';
   static const String iconexRemove = 'assets/images/Iconex_remove.png';
+  static const String pointIcon = 'assets/images/Point Icon.png';
+  static const String timeIcon = 'assets/images/Time Icon.png';
   static const String allCars = 'assets/images/all cars.png';
   static const String arrowUp = 'assets/images/arrow-up.png';
   static const String avatar = 'assets/images/avatar.png';

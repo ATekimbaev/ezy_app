@@ -31,7 +31,7 @@ class _DriverDrawerWidgetState extends State<DriverDrawerWidget> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(
+            const SizedBox(
               height: 60,
             ),
             Row(
@@ -41,7 +41,7 @@ class _DriverDrawerWidgetState extends State<DriverDrawerWidget> {
                   width: 41,
                   height: 41,
                 ),
-                SizedBox(
+              const  SizedBox(
                   width: 20,
                 ),
                 Column(
@@ -52,7 +52,7 @@ class _DriverDrawerWidgetState extends State<DriverDrawerWidget> {
                       style:
                           AppFonts.w600s20.copyWith(color: AppColors.grey),
                     ),
-                    SizedBox(
+                const    SizedBox(
                       height: 2,
                     ),
                     Text(

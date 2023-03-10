@@ -9,6 +9,8 @@ void main() {
     expect(File(Images.frame).existsSync(), true);
     expect(File(Images.iconex).existsSync(), true);
     expect(File(Images.iconexRemove).existsSync(), true);
+    expect(File(Images.pointIcon).existsSync(), true);
+    expect(File(Images.timeIcon).existsSync(), true);
     expect(File(Images.allCars).existsSync(), true);
     expect(File(Images.arrowUp).existsSync(), true);
     expect(File(Images.avatar).existsSync(), true);

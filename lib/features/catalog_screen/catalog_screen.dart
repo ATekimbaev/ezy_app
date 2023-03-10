@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
+import '../../core_data/ui/common_widgets/circle_drawer_button.dart';
 import '../../core_data/ui/common_widgets/drawer_widget.dart';
 import '../../core_data/ui/common_widgets/gridview_container_widget.dart';
 import '../../core_data/ui/theme/app_colors.dart';
@@ -32,17 +33,7 @@ class CatalogScreen extends StatelessWidget {
                     onTap: () {
                       Scaffold.of(context).openDrawer();
                     },
-                    child: CircleAvatar(
-                      backgroundColor: AppColors.white,
-                      maxRadius: 25,
-                      // minRadius: 25,
-                      child: Center(
-                          child: Image.asset(
-                        Images.profile,
-                        width: 24,
-                        height: 24,
-                      )),
-                    ),
+                    child: CirlceDrawerButton()
                   );
                 }),
                 const SizedBox(

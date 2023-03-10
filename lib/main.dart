@@ -1,5 +1,6 @@
 import 'package:ezy_app/features/catalog_screen/catalog_screen.dart';
 import 'package:flutter/material.dart';
+import 'features/applications_screen/applications_screen.dart';
 import 'features/auto_parts_store/auto_parts_store.dart';
 import 'features/customers_screen/registration_screen/registration_screen.dart';
 import 'features/driver_registration_screen/driver registration_screen.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       // home: DriverRegistrationScreen(),
       // home: AutoPartsStore(),
       // home: WelcomeScreen(),
-      home: CatalogScreen(),
+      home: CatalogScreen()
     );
   }
 }
