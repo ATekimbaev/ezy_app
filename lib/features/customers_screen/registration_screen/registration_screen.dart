@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 // import 'package:flutter/src/widgets/placeholder.dart';
 
 import '../../../core_data/ui/common_widgets/custom_textfield_widget.dart';
+import '../../check_code_screen/check_code.dart';
 
 class CustomersRegistrationScreen extends StatelessWidget {
   const CustomersRegistrationScreen({super.key});
@@ -70,7 +71,14 @@ class CustomersRegistrationScreen extends StatelessWidget {
               AppButton(
                 title: 'Зарегистрироваться',
                 fontColor: AppColors.violet,
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const CheckCodeScreen(),
+                    ),
+                  );
+                },
                 isTransparent: false,
                 backGroundColor: AppColors.white,
               )

@@ -1,4 +1,5 @@
 import 'package:ezy_app/core_data/ui/theme/app_fonts.dart';
+import 'package:ezy_app/features/applications_screen/applications_screen.dart';
 import 'package:ezy_app/resources/resources.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -30,11 +31,10 @@ class CatalogScreen extends StatelessWidget {
               children: [
                 Builder(builder: (context) {
                   return InkWell(
-                    onTap: () {
-                      Scaffold.of(context).openDrawer();
-                    },
-                    child: CirlceDrawerButton()
-                  );
+                      onTap: () {
+                        Scaffold.of(context).openDrawer();
+                      },
+                      child: CirlceDrawerButton());
                 }),
                 const SizedBox(
                   width: 90,
@@ -89,7 +89,10 @@ class CatalogScreen extends StatelessWidget {
                   ListView(scrollDirection: Axis.horizontal, children: <Widget>[
                 InkWell(
                   onTap: () {
-                    
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const ApplicationsScreen()));
                   },
                   child: Image.asset(
                     Images.allCars,

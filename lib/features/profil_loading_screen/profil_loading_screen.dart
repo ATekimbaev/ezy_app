@@ -1,10 +1,13 @@
 import 'package:ezy_app/core_data/ui/common_widgets/app_button.dart';
 import 'package:ezy_app/core_data/ui/theme/app_colors.dart';
 import 'package:ezy_app/core_data/ui/theme/app_fonts.dart';
+import 'package:ezy_app/features/applications_screen/applications_screen.dart';
 import 'package:ezy_app/resources/resources.dart';
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../core_data/ui/common_widgets/back_gorund_widget.dart';
+import '../catalog_screen/catalog_screen.dart';
 
 class ProfilLoadingScreen extends StatelessWidget {
   const ProfilLoadingScreen({super.key});
@@ -43,7 +46,15 @@ class ProfilLoadingScreen extends StatelessWidget {
                 backGroundColor: AppColors.lightViolet,
                 width: 375,
                 title: 'Продолжить',
-                onPressed: () {})
+                onPressed: () async {
+                  // ignore: use_build_context_synchronously
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const CatalogScreen(),
+                    ),
+                  );
+                })
           ],
         ),
       ),

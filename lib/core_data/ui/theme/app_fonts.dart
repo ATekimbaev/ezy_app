@@ -37,5 +37,8 @@ abstract class AppFonts {
     fontSize: 12,
     fontWeight: FontWeight.w700,
   );
+  static const TextStyle w500s30 = TextStyle(
+    fontSize: 30,
+    fontWeight: FontWeight.w500,
+  );
 }
-

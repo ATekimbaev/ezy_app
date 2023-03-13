@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'features/auto_parts_store/auto_parts_store.dart';
 import 'features/customers_screen/registration_screen/registration_screen.dart';
 import 'features/entrance_screen/entrance_screen.dart';
+import 'features/map_screen/map_screen.dart';
 import 'features/welcome_screen/welcome_screen.dart';
 
 void main(List<String> args) {
@@ -19,8 +20,8 @@ class MyApp extends StatelessWidget {
       // home: const EntranceScreen(),
       // home: DriverRegistrationScreen(),
       // home: AutoPartsStore(),
-      // home: WelcomeScreen(),
-      home: CatalogScreen(),
+      home: MapScreen(),
+      // home: CatalogScreen(),
     );
   }
 }

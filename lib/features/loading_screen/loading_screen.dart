@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:ezy_app/core_data/ui/theme/app_colors.dart';
 import 'package:ezy_app/core_data/ui/theme/app_fonts.dart';
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../core_data/ui/common_widgets/back_gorund_widget.dart';
 import '../profil_loading_screen/profil_loading_screen.dart';
